@@ -1,0 +1,57 @@
+This is an application using SimpleHTTPServer to
+serve a different index page. The index page is generated within
+code. It shows images within specified directory on the page. It
+shows 20 images at first, showing 20 more on clicking the 'more'
+link until all images are shown. The order of images is randomized.
+
+I think this can be used for a porn website.
+
+Usage: pygallerypage.py [options] [DIR [PORT]]
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -d DIR, --directory=DIR
+                        Run in directory DIR
+  -p PORT, --port=PORT  Run on port PORT
+
+
+Help on module pygallerypage:
+
+NAME
+    pygallerypage
+
+FILE
+    /home/railmaniac/pygallerypage/pygallerypage.py
+
+CLASSES
+    GalleryClass
+    
+    class GalleryClass
+     |  Methods defined here:
+     |  
+     |  __init__(self, path, port=8000)
+     |  
+     |  generateCompleteHTML(self)
+     |  
+     |  generateHTML(self)
+     |  
+     |  generateJavascript(self)
+     |  
+     |  randomize(self)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  imgexts = ['.jpg', '.png', '.gif']
+     |  
+     |  imglist = []
+     |  
+     |  path = ''
+     |  
+     |  port = 8000
+     |  
+     |  prefix = 'python'
+     |  
+     |  usage = 'usage: %prog [options] [DIR [PORT]]'
+
